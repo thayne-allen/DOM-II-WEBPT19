@@ -11,3 +11,13 @@ window.addEventListener("load", function(event) {
     window.addEventListener('mouseup', function(event) {
         event.target.style.opacity = '1';
     })
+
+    const homePrevent = document.querySelector('#home');
+  homePrevent.addEventListener('click', function(event){
+      event.preventDefault();
+  });
+
+const divClick = document.querySelector('#divBorder');
+  divClick.addEventListener('click', function(event){
+    event.currentTarget.style.background = 'aqua';
+  });
